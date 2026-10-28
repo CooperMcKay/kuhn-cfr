@@ -1,0 +1,16 @@
+[project]
+name = "kuhn-cfr"
+version = "0.1.0"
+description = "Kuhn poker solved with counterfactual regret minimization, with exact exploitability evaluation."
+requires-python = ">=3.10"
+dependencies = ["numpy", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[tool.setuptools]
+packages = ["kuhn"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
